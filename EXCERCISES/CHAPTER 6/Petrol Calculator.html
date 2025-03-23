@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Petrol Calculator.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona 5 Petrol Calculator</title> 
+</head>
+<body>
+    <div class="Theuserinput">
+        <h1>Petrol</h1>
+        
+        <div class="PersonaImage">
+            <img class="PersonaLogo" src="PersonaLogo.png">
+          </div>
+
+        <div class="JokerImage">
+          <img class="JokerSprite" src="jokersprite.jpg">
+        </div>
+        
+        <div class="JokerImage2">
+            <img class="JokerSprite2" src="JokerSprite2.jpg">
+        </div>
+
+        <label for="petrolCost">Cost of Petrol per Liter (د.إ):</label>
+        <input type="number" id="petrolCost" value="1" step="0.01" />
+
+     
+        
+        <label for="litersPurchased">Liters Purchased:</label>
+        <input type="number" id="litersPurchased" value="0" step="0.1" />
+
+      
+        <button id="calculateButton">Calculate Total Cost</button>
+
+        <p id="Cost">Total Cost: د.إ0.00</p>
+
+        <br>
+
+        <button id="PlayAudioButton">Play Audio</button>
+          <audio id="BackgroundMusic" src="Alleycat.mp3" loop>
+           </audio>
+
+    </div>
+
+    <script src="Petrol Calculator.js"></script> 
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #333333;
+    padding: 20px;
+    }
+
+        
+.SelfishMachines {
+    filter: brightness(0.9);
+    border: 5px solid #ff6347; 
+    width: 400px; 
+        height: auto; 
+        margin: 40px 0;
+        transition: transform 0.3s, filter 0.3s;
+
+        }
+
+.CollideWithTheSky {
+    filter: sepia(30%);
+    border: 5px solid #4682b4; 
+    width: 400px; 
+        height: auto; 
+        margin: 40px 0;
+        transition: transform 0.3s, filter 0.3s;
+
+        }
+
+.Misadventures {
+    filter: grayscale(50%);
+    border: 5px solid #32cd32; 
+    width: 400px; 
+        height: auto; 
+        margin: 40px 0;
+        transition: transform 0.3s, filter 0.3s;
+
+        }
+

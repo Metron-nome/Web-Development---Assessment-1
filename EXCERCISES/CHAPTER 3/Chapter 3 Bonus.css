@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center; /* this makes sure that every div has the same size */
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+}
+
+
+#A {
+    border: 5px solid rgb(161, 15, 161); /* Simple shadow behind the box */
+    box-shadow: 10px 10px 5px -2px red;
+}
+
+
+
+#B {
+    border: 5px solid green;
+    box-shadow: inset 10px 10px 10px black; /* Shadow inside the box */
+}
+
+
+#C {
+    border: 15px solid green;
+    border-radius: 15px; /* First layer of the box */
+    position: relative;
+}
+
+#C::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;   /* Second layer of the box */
+    bottom: -5px;
+    border: 5px solid blue;
+    border-radius: 15px;
+}
+
+#C::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;   /* And the third layer of the box */
+    right: -10px;
+    bottom: -10px;
+    border: 5px solid red;
+    border-radius: 20px;
+}
+
+
+#D {
+    border: 5px solid rgb(139, 4, 4);
+    text-shadow: 0.09375rem #2e2e2e;   /* Shadow text inside the box */
+    text-shadow: 5px 5px 0px #2b2a2a
+}

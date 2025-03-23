@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .Video-Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  video {
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid #fff; 
+  }
+
+  .volume-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  #volume-slider {
+    margin-left: 10px;
+    width: 200px;
+  }

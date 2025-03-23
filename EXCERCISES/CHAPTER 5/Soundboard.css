@@ -1,0 +1,52 @@
+body {
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bf22f452582929.5a2e8c1101519.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.soundboard-container {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+h1 {
+    background-color: #fff;
+    color: #d22b2b;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.sample {
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sample:hover {
+    background-color: #d22b2b;
+    color: #fff;
+}
+
+.sample.active {
+    background-color: #d22b2b;
+    color: #fff;
+}
+
