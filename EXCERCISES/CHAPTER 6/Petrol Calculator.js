@@ -10,7 +10,7 @@ function calculateTotalCost() { // This function is defined to calculate the cos
     const totalCost = petrolCost * litersPurchased;
     // And this is where the calculation happens
     
-    document.getElementById("Cost").innerText = `Total Cost: د.إ${totalCost.toFixed(2)}`;
+    document.getElementById("Cost").innerText = `Total Cost: $ ${totalCost.toFixed(2)}`;
 } //This displays the total cost of the petrol
 
 var promise = document.querySelector('audio').play();
