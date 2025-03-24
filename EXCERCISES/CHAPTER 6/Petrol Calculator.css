@@ -26,10 +26,10 @@ body {
 
 .PersonaImage {
     position: absolute; 
-    top: 160px; 
+    bottom: 400px;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 150px; 
+    width: 90px; 
     height: auto; 
     z-index: 10; 
 }
@@ -37,6 +37,7 @@ body {
 .PersonaLogo {
     width: 100%; 
     height: auto; 
+    top: -200px;
 }
 
 .JokerSprite{
