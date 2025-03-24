@@ -7,42 +7,46 @@
     <title>Persona 5 Petrol Calculator</title> 
 </head>
 <body>
-    <div class="Theuserinput">
+    <div class="Theuserinput"> <!-- This is the design of the entire calculator-->
         <h1>Petrol</h1>
         
-        <div class="PersonaImage">
+        <div class="PersonaImage"> <!-- This is the Persona 5 logo placed on top of the calculator-->
             <img class="PersonaLogo" src="PersonaLogo.png">
           </div>
 
         <div class="JokerImage">
           <img class="JokerSprite" src="jokersprite.jpg">
         </div>
-        
+                  <!-- These two "Joker" sprite images are placed left and right-->
         <div class="JokerImage2">
             <img class="JokerSprite2" src="JokerSprite2.jpg">
         </div>
 
-        <label for="petrolCost">Cost of Petrol per Liter (د.إ):</label>
-        <input type="number" id="petrolCost" value="1" step="0.01" />
+        <label for="petrolCost">Cost of Petrol per Liter (د.إ):</label>  <!-- This is just a label where the user can see -->
+        <input type="number" id="petrolCost" value="1" step="0.01" />     <!-- the cost of petrol per liter -->
 
-     
+       <!-- It is also where the user can input a number or use the arrow buttons to type how many
+        Petrol it can actually cost depending on the brand of Petrol they buy from.-->
         
         <label for="litersPurchased">Liters Purchased:</label>
         <input type="number" id="litersPurchased" value="0" step="0.1" />
-
+        <!-- This is where the user can input how many liters they purchased-->
       
         <button id="calculateButton">Calculate Total Cost</button>
-
+        <!-- This button can be clicked from the user to calculate the total cost of the petrol.-->
         <p id="Cost">Total Cost: د.إ0.00</p>
 
-        <br>
+        
+        <!-- This button is used to play the audio that I coded in the html
+         because the audio can't autoplay in Google Chrome and in Opera GX as I've tested before.-->
 
         <button id="PlayAudioButton">Play Audio</button>
           <audio id="BackgroundMusic" src="Alleycat.mp3" loop>
            </audio>
 
     </div>
-
+    
+    <!-- This is just a link to the script I used. i used an external file so that it'll be more organized.-->
     <script src="Petrol Calculator.js"></script> 
 </body>
 </html>
